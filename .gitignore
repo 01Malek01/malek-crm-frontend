@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Environment — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test / coverage
+coverage/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.local
+
+# OS
+.DS_Store
+Thumbs.db

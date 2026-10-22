@@ -1,0 +1,69 @@
+export const ROLES = {
+  ADMIN: 'ADMIN',
+  SALES_MANAGER: 'SALES_MANAGER',
+  AGENT: 'AGENT',
+};
+
+export const MANAGER_ROLES = [ROLES.ADMIN, ROLES.SALES_MANAGER];
+
+export const PIPELINE_STAGES = [
+  { key: 'NEW' },
+  { key: 'CONTACTED' },
+  { key: 'MATCHING' },
+  { key: 'VIEWING' },
+  { key: 'QUOTATION' },
+  { key: 'RESERVED' },
+  { key: 'WON' },
+  { key: 'LOST' },
+];
+
+export const STAGE_KEYS = PIPELINE_STAGES.map((s) => s.key);
+
+export const PROPERTY_TYPES = ['APARTMENT', 'VILLA', 'TOWNHOUSE', 'OFFICE', 'COMMERCIAL', 'LAND'];
+export const LISTING_TYPES = ['SALE', 'RENT'];
+
+export const PROPERTY_STATUS = {
+  AVAILABLE: 'AVAILABLE',
+  RESERVED: 'RESERVED',
+  SOLD: 'SOLD',
+  RENTED: 'RENTED',
+};
+
+export const LEAD_SOURCES = [
+  'WEBSITE',
+  'SOCIAL_MEDIA',
+  'WALK_IN',
+  'REFERRAL',
+  'BROKER',
+  'CALL_CENTER',
+  'EXHIBITION',
+  'EXISTING_CUSTOMER',
+];
+export const PURPOSES = ['BUY', 'RENT'];
+
+export const DEAL_STATUSES = [
+  'QUOTATION',
+  'RESERVED',
+  'PENDING_APPROVAL',
+  'APPROVED',
+  'CONTRACTED',
+  'HANDED_OVER',
+  'REJECTED',
+  'CANCELLED',
+];
+export const OPEN_DEAL_STATUSES = ['QUOTATION', 'RESERVED', 'PENDING_APPROVAL', 'APPROVED'];
+
+export const PAYMENT_FREQUENCIES = ['ONE_TIME', 'MONTHLY', 'QUARTERLY', 'SEMI_ANNUAL', 'ANNUAL'];
+export const PAYMENT_METHODS = ['BANK_TRANSFER', 'SADAD', 'MADA', 'CHEQUE', 'CASH'];
+
+export const ACTIVITY_TYPES = ['CALL', 'WHATSAPP', 'MEETING', 'VIEWING', 'FOLLOW_UP', 'NOTE'];
+export const ACTIVITY_OUTCOMES = ['INTERESTED', 'NEEDS_TIME', 'NEGOTIATING', 'NOT_INTERESTED', 'NO_ANSWER'];
+
+export const SERVICE_CATEGORIES = ['AC', 'PLUMBING', 'ELECTRICAL', 'ELEVATOR', 'CLEANING', 'PEST_CONTROL', 'GENERAL'];
+export const SERVICE_PRIORITIES = ['LOW', 'MEDIUM', 'HIGH', 'URGENT'];
+export const SERVICE_STATUSES = ['OPEN', 'ASSIGNED', 'IN_PROGRESS', 'RESOLVED', 'CLOSED'];
+
+// Sales discount authority (mirrors backend MAX_DISCOUNT_PCT).
+export const MAX_DISCOUNT_PCT = { AGENT: 5, SALES_MANAGER: 15, ADMIN: 15 };
+export const RETT_RATE = 5;
+export const VAT_RATE = 15;
